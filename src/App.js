@@ -9,13 +9,25 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
-      {/* <About />
-      <Media />
-      <Contact /> */}
+      <BrowserRouter>
+        <div className="navLinks">
+          <Link to="/" className="NavLinks">Home</Link>
+          <Link to="/about" className="NavLinks">About</Link>
+          <Link to="/media" className="NavLinks">Media</Link>
+          <Link to="/contact" className="NavLinks">Contact</Link>
+        </div>
+
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/media' component={Media} />
+          <Route exact path='/contact' component={Contact} />
+        </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );
 }
 
 export default App;
+

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Media extends Component {
     render () {
         return (
             <div>
-                <h3>Katie Abraham</h3>
+                <p>This is where recordings will go.</p>
             </div>
         )
     }
 };
 
-export default Header;
+export default Media;

@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 class Home extends Component {
     render () {
         return (
-            <div>
-                <div>
+            <div className="homescreen">
+                <div className= "title">
                     <img src="#" alt="red headshot"/>
                     <h1>KATIE ABRAHAM</h1>
                     <h2>Mezzo-Soprano</h2>
                 </div>
+                <div className="homeContainer">
                     <h3>WELCOME</h3>
                     <p>Welcome to Katie Abraham's website! Here you will find information on the career of this up-and-coming mezzo-soprano, as well as photos, recordings, and engagements.</p>
                     <h3>PRESS</h3>
@@ -27,6 +28,7 @@ class Home extends Component {
                     <p>Katie will be playing the part of Eleanor of Aquitaine in Flower and Hawk, a monodrama by Carlisle Floyd, at The Boston Conservatory.​</p>
                     <h4>January 2013</h4>
                     <p>Katie received an honorable mention at the Kansas City District Metropolitan Opera National Council Auditions.</p>
+                    </div>
             </div>
         )
     }

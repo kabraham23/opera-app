@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class About extends Component {
     render () {
         return (
-            <div>
-                <div>
+            <div className="homescreen">
+                <div className="homeContainer">
                     <h1>About Katie</h1>
                     <p>A daughter of two musicians, music has always been a major influence in Katie Abraham's life. She started Suzuki, at age 4, with a violin crafted from a cereal box and ruler. From her orchestral training came a love of chamber music and an appreciation for great musicianship. Her transition to opera came from a love of singing, theater, lush orchestra, and collaborating with others.</p>
                     <h4>Performing with determination, grace, and joy.</h4>

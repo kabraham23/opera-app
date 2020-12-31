@@ -15,10 +15,10 @@ function App() {
       <Header />
       <BrowserRouter>
         <div className="navLinks">
-          <Link to="/" className="NavLinks">Home</Link>
-          <Link to="/about" className="NavLinks">About</Link>
-          <Link to="/media" className="NavLinks">Media</Link>
-          <Link to="/contact" className="NavLinks">Contact</Link>
+          <Link to="/" className="NavLinkButton">Home</Link>
+          <Link to="/about" className="NavLinkButton">About</Link>
+          <Link to="/media" className="NavLinkButton">Media</Link>
+          <Link to="/contact" className="NavLinkButton">Contact</Link>
         </div>
 
         <Switch>

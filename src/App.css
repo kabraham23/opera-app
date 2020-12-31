@@ -1,3 +1,63 @@
-* {
-  background-color: #8f67b5;
+
+
+body {
+  background-attachment: fixed;
+}
+.navLinks {
+  background-color: bisque;
+  text-align: right;
+  padding: 1em;
+  border: 2px solid purple;
+}
+
+.navLinkButton {
+  padding: 1px;
+  border: 2px solid purple;
+}
+
+.title {
+  text-align: center;
+}
+
+.homescreen {
+  background-image: url(https://images.photowall.com/products/57653/marble-with-yellow-veins.jpg?h=699&q=85);
+  background-size: cover;
+  background-attachment: fixed;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.homeContainer {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-indent: 0 2em 0 2em;
+  width: 1000px;
+  height: auto;
+  position: relative;
+  border-style: outset;
+  background: inherit;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.homeContainer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 200px rgba(255, 255, 255,255, .5);
+  filter: blur(10px);
+  background: inherit;
+  margin: -20px;
+  z-index: -1;
 }

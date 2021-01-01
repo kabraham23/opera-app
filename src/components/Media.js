@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Media extends Component {
+    state = {
+        selectedTrack: null,
+        player: "stopped"
+    };
+
     componentDidUpdate(prevProps, prevState) {
         if(this.state.selectedTrack !== prevState.selectedTrack) {
             let track;
@@ -17,6 +22,7 @@ class Media extends Component {
             if(track) {
                 this.player.src = track;
                 this.player.play()
+                this.setState({player: "playing"})
             }
         }
     }
@@ -24,12 +30,12 @@ class Media extends Component {
     render () {
         const list = [{id: 1, title: "Sein wir wieder Gut"}, {id: 2, title: "I am not my own"}].map(item => {
             return (
-                <button>
+                
                     <li key={item.id}
                     onClick={() => this.setState({selectedTrack: item.title })}>
                         {item.title}
                     </li>
-                </button>
+                
             );
         });
 
@@ -37,6 +43,25 @@ class Media extends Component {
             <div className="homescreen">
                 <div className="homeContainer">
                     <ul>{list}</ul>
+                    <div>
+                        {this.state.player === "paused" && (
+                            <button onClick = {() => this.setState({player: "playing"})}>
+                                Play
+                            </button>
+                        )}
+                        {this.state.player === "playing" && (
+                            <button onClick={() => this.setState({player: "paused"})}>
+                                Pause
+                            </button>
+                        )}
+                        {this.state.player === "playing" || this.state.player === "paused" ? (
+                            <button onClick={() => this.setState({player: "stopped"})}>
+                                Stop
+                            </button>
+                        ) : (
+                            ""
+                        )}
+                    </div>
                     <audio ref={ref => this.player = ref}></audio>
                 </div>
             </div>

@@ -24,8 +24,24 @@ class Media extends Component {
                 this.player.play()
                 this.setState({player: "playing"})
             }
+            if (this.state.player !== prevState.player) {
+                if (this.state.player === "paused") {
+                    this.player.pause();
+                } else if (this.state.player === "stopped") {
+                    this.player.pause();
+                    this.player.currentTime = 0;
+                    this.setState({ selectedTrack: null });
+                } else if (
+                    this.state.player === "playing" && 
+                    prevState.player === "paused"
+                ) {
+                    this.player.play();
+                }
+            }
         }
     }
+
+    
 
     render () {
         const list = [{id: 1, title: "Sein wir wieder Gut"}, {id: 2, title: "I am not my own"}].map(item => {

@@ -10,7 +10,6 @@ class Media extends Component {
                     <ReactPlayer url="https://soundcloud.com/kabraham23/donde-lieta-81913" />
                     <ReactPlayer url="https://soundcloud.com/kabraham23/va-tk-2" />
                 </div>
-                <div></div>
             </div>
         )
     }

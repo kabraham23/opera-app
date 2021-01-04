@@ -15,7 +15,7 @@ function App() {
       {/* <Header /> */}
       <BrowserRouter>
         <div className="navLinks">
-        <h3 className="navLinkButton">Katie Abraham</h3>
+        <h3 className="titlename">Katie Abraham</h3>
           <Link to="/" className="navLinkButton" >Home</Link>
           <Link to="/about" className="navLinkButton" >About</Link>
           <Link to="/media" className="navLinkButton" >Media</Link>

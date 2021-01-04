@@ -17,6 +17,7 @@ class Contact extends Component {
                     <Mailto email="katie.t.abraham@gmail.com" obfuscate={true}>
                         <h3>Email me!</h3>
                     </Mailto>
+                    
                 </div>
             </div>
         )

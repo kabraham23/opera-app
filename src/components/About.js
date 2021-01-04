@@ -12,12 +12,12 @@ class About extends Component {
                     <p>Katie graduated from The Boston Conservatory with a Graduate Performance Diploma in Opera. Her time at the Conservatory lead her to sing Female Chorus in The Rape of Lucretia, Lišak (Fox) in Příhody lišky Bystroušky (The Cunning Little Vixen), and Eleanor of Aquitaine in Carlysle Floyd's Flower and Hawk - being acclaimed as "a compelling tour de force".</p>
                     <p>Katie takes great pride in her recital work. She has been selected for prestigious recitals, working with Ken Merrill on the Ariettes Oubliées by Claude Debussy, Schubert's Auf dem Strom with Victor Rosenbaum and various French mélodie with Christina Stanescu. She has found success in competitions - winning second place in The Boston Conservatory's concerto competition singing Strauss's Vier Letzte Lieder and being awarded an encouragement award at the Kansas City District Metropolitan Opera National Council Auditions. </p>
                 </div>
-                <div>
+                {/* <div>
                     <img src="#" alt="grey headshot"/>
                     <img src="#" alt="Lady Billows Purple Dress"/>
                     <img src="#" alt="Ruth Maid"/>
                     <img src="#" alt="Mother of Antonia"/>
-                </div>
+                </div> */}
             </div>
         )
     }

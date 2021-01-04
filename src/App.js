@@ -12,13 +12,14 @@ import Footer from './components/Footer.js';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <BrowserRouter>
         <div className="navLinks">
-          <Link to="/" className="NavLinkButton">Home</Link>
-          <Link to="/about" className="NavLinkButton">About</Link>
-          <Link to="/media" className="NavLinkButton">Media</Link>
-          <Link to="/contact" className="NavLinkButton">Contact</Link>
+        <h3 className="navLinkButton">Katie Abraham</h3>
+          <Link to="/" className="navLinkButton" >Home</Link>
+          <Link to="/about" className="navLinkButton" >About</Link>
+          <Link to="/media" className="navLinkButton" >Media</Link>
+          <Link to="/contact" className="navLinkButton" >Contact</Link>
         </div>
 
         <Switch>

@@ -6,9 +6,9 @@ class Media extends Component {
         return (
             <div className="homescreen">
                 <div className="homeContainer">
-                    <ReactPlayer url="https://soundcloud.com/kabraham23/sein-wir-wieder-gut" />
-                    <ReactPlayer url="https://soundcloud.com/kabraham23/donde-lieta-81913" />
-                    <ReactPlayer url="https://soundcloud.com/kabraham23/va-tk-2" />
+                    <ReactPlayer className="soundcloudPlayer" url="https://soundcloud.com/kabraham23/sein-wir-wieder-gut" />
+                    <ReactPlayer className="soundcloudPlayer" url="https://soundcloud.com/kabraham23/donde-lieta-81913" />
+                    <ReactPlayer className="soundcloudPlayer" url="https://soundcloud.com/kabraham23/va-tk-2" />
                 </div>
             </div>
         )

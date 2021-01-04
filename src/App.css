@@ -1,17 +1,25 @@
-
-
 body {
   background-attachment: fixed;
 }
+
 .navLinks {
   background-color: bisque;
   text-align: right;
-  padding: 1em;
-  border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  padding: .5em;
+  height: 3rem;
 }
 
 .navLinkButton {
-  padding: 1px;
+  text-transform: none;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
 }
 
 .title {
@@ -20,6 +28,7 @@ body {
 
 .homescreen {
   background-image: url(https://images.photowall.com/products/57653/marble-with-yellow-veins.jpg?h=699&q=85);
+  font-family: 'Playfair Display', serif;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -36,6 +45,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem;
   text-indent: 0 2em 0 2em;
   width: 1000px;
   height: auto;
@@ -60,11 +71,19 @@ body {
   z-index: -1;
 }
 
+.soundcloudPlayer {
+  max-height: 5rem;
+  padding: 3rem;
+}
+
 .footer {
   position: relative;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  padding: 1rem;
   background-color: bisque;
 }

@@ -12,10 +12,10 @@ class Contact extends Component {
     render () {
         return (
             <div className="homescreen">
-                <div>
+                <div className="homeContainer">
                     <h3>I'm not singing professionally anymore, but if you need a website for yourself, please let me know!</h3>
                     <Mailto email="katie.t.abraham@gmail.com" obfuscate={true}>
-                        Email me!
+                        <h3>Email me!</h3>
                     </Mailto>
                 </div>
             </div>

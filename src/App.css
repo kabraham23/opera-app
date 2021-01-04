@@ -1,5 +1,6 @@
 body {
   background-attachment: fixed;
+  width: 100%;
 }
 
 .navLinks {
@@ -23,7 +24,33 @@ body {
 }
 
 .title {
+  position: relative;
   text-align: center;
+  display: flex;
+}
+
+.headshot {
+  width: 90vw;
+  height: auto;
+  padding: 2rem;
+}
+
+.titleTexta {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 30%;
+  bottom: 50%;
+}
+
+.titleTextb {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 30%;
+  bottom: 54%;
 }
 
 .homescreen {
@@ -70,6 +97,8 @@ body {
   margin: -20px;
   z-index: -1;
 }
+
+
 
 .soundcloudPlayer {
   max-height: 5rem;

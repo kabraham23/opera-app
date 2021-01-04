@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import headshot from './images/headshot.jpg';
 
 class Home extends Component {
     render () {
         return (
             <div className="homescreen">
                 <div className= "title">
-                    <img src="#" alt="red headshot"/>
-                    <h1>KATIE ABRAHAM</h1>
-                    <h2>Mezzo-Soprano</h2>
+                    <img className="headshot" src={headshot} alt="red headshot"/>
+                    <h1 className="titleTexta">KATIE ABRAHAM</h1>
+                    <h2 className="titleTextb">Mezzo-Soprano</h2>
                 </div>
                 <div className="homeContainer">
                     <h3>WELCOME</h3>

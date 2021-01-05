@@ -10,6 +10,13 @@ body {
   flex-direction: row;
   padding: .5em;
   height: 3rem;
+  @media min-width: 768px {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
 
 .titlename {
@@ -23,6 +30,11 @@ body {
   align-items: baseline;
   margin: 5px;
   font-size: 20px;
+  @media screen (min-width: 768px){
+    text: 1.2rem;
+    line-height: 2.1rem;
+    justify-content: left;
+  }
 }
 
 .navLinkButton {
@@ -36,6 +48,12 @@ body {
   align-items: baseline;
   margin: 5px;
   font-size: 18px;
+  @media min-width: 768px {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
 
 .navLinkButton:hover {
@@ -46,32 +64,21 @@ body {
   position: relative;
   text-align: center;
   display: flex;
+  @media max-width: 768px {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
 
 .headshot {
   width: 90vw;
   height: auto;
   margin: 2rem;
-  border-radius: 10em;
+  border-radius: 2em;
   box-shadow: 5px 5px grey;
-}
-
-.titleTexta {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  flex-wrap: wrap;
-  left: 30%;
-  bottom: 50%;
-}
-
-.titleTextb {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  flex-wrap: wrap;
-  left: 30%;
-  bottom: 54%;
 }
 
 .homescreen {
@@ -84,6 +91,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    width: 100vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
 }
 
 .homeContainer {
@@ -96,13 +112,19 @@ body {
   padding: 1.5rem;
   margin: 1.5rem;
   text-indent: 0 2em 0 2em;
-  width: 1000px;
+  width: 80%;
   height: auto;
   position: relative;
   border-style: outset;
   background: inherit;
   overflow: hidden;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .homeContainer:before {
@@ -117,6 +139,12 @@ body {
   background: inherit;
   margin: -20px;
   z-index: -1;
+  @media screen and (min-width: 768px) {
+    text: 1.2rem;
+    line-height: 2.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -136,4 +164,10 @@ body {
   justify-content: center;
   padding: 1rem;
   background-color: #E9DAC4;
+  @media screen and (min-width: 768px) {
+    text: 1rem;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
 }

@@ -7,8 +7,6 @@ class Home extends Component {
             <div className="homescreen">
                 <div className= "title">
                     <img className="headshot" src={headshot} alt="red headshot"/>
-                    <h1 className="titleTexta">KATIE ABRAHAM</h1>
-                    <h2 className="titleTextb">Mezzo-Soprano</h2>
                 </div>
                 <div className="homeContainer">
                     <h3>WELCOME</h3>

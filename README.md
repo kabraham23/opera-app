@@ -12,5 +12,5 @@ A front-end website built to make it easy to showcase talents and enable further
 # Technologies Used
 Create-React-App  
 Ruby-on-Rails  
-Soundcloud integration
+Soundcloud integration  
 CSS flexbox  
